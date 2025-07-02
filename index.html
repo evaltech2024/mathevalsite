@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AlgoTrader | Smart Brokerage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #0f0f0f;
+            color: #fff;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            background: url('https://cdn.pixabay.com/photo/2016/12/29/12/50/stock-1934933_1280.jpg') center/cover no-repeat;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .hero-content {
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .section {
+            padding: 80px 20px;
+        }
+
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #00d1b2;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.2;
+        }
+
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 30px;
+            color: #aaa;
+        }
+        
+        @media (max-width: 768px) {
+            .row.g-5 {
+                flex-direction: column !important;
+                align-items: center;
+            }
+            #rolloverContent {
+                width: 100%;
+            }
+        }
+
+        .rollover-content {
+            margin-top: 1rem;
+            background-color: #343a40;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: left;
+            }
+
+        .animated-list li {
+        opacity: 0;
+        margin-bottom: 8px;
+        }
+
+    </style>
+</head>
+<body>
+
+<video class="video-background" autoplay muted loop>
+    <source src="https://cdn.coverr.co/videos/coverr-finance-background-4680/1080p.mp4" type="video/mp4">
+</video>
+
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content" data-aos="fade-up">
+        <h1 class="display-4 fw-bold">Math Ev(AL-GO) Trades</h1>
+        <p class="lead">Empowering your trades with mathmatically evaluated cutting-edge algorithmic intelligence</p>
+        <a href="#features" class="btn btn-success btn-lg mt-4">Explore Features</a>
+    </div>
+</section>
+
+<section id="features" class="section bg-dark text-white">
+  <div class="container text-center">
+    <div class="row g-5 flex-column flex-md-row">
+
+      <!-- Feature 1 -->
+      <div class="col-md-4 feature-toggle" data-aos="fade-right" id="feature1">
+        <i class="fas fa-robot icon"></i>
+        <h3>AI-Powered Algorithms</h3>
+        <p>Trade smarter, faster, and more accurately using our machine learning models.</p>
+        <div class="rollover-content d-none">
+          <ul class="animated-list">
+            <li>Pattern Recognition</li>
+            <li>Auto Trade Execution</li>
+            <li>Backtesting Strategies</li>
+            <li>AI Risk Assessment</li>
+            <li>Self-Optimizing Models</li>
+            <li>Data Stream Adaptation</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="col-md-4 feature-toggle" data-aos="fade-up" id="feature2">
+        <i class="fas fa-chart-line icon"></i>
+        <h3>Real-Time Insights</h3>
+        <p>Track market trends in real-time with precision and speed.</p>
+        <div class="rollover-content d-none">
+          <ul class="animated-list">
+            <li>Live Market Data</li>
+            <li>Trend Alerts</li>
+            <li>Signal detection</li>
+            <li>Custom Dashboards</li>
+            <li>Double/Triple Down</li>
+            <li>Dollar-Cost Averge</li>
+            <li>Instant Notifications</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="col-md-4 feature-toggle" data-aos="fade-left" id="feature3">
+        <i class="fas fa-user-shield icon"></i>
+        <h3>Secure Brokerage</h3>
+        <p>We prioritize your security with end-to-end encryption and 2FA protection.</p>
+        <div class="rollover-content d-none">
+          <ul class="animated-list">
+            <li>Encryption Standards</li>
+            <li>Multi-Layer Authentication</li>
+            <li>Regulatory Licenses</li>
+            <li>Fraud Monitoring</li>
+            <li>Cloud Security</li>
+            <li>Session Timeout</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section bg-secondary">
+    <div class="container text-center text-white" data-aos="zoom-in">
+        <h2>Connect With Us</h2>
+        <p>Have questions or want to schedule a demo? Let's talk.</p>
+        <a href="mailto:info@algotrader.com" class="btn btn-light mt-3"><i class="fas fa-envelope"></i> Email Us</a>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Eval Tech Inc. | Trade Wisely. Trade Smart.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<script>
+  const featureToggles = document.querySelectorAll('.feature-toggle');
+  const featuresSection = document.getElementById('features');
+
+  const animateListItems = (container) => {
+    const items = container.querySelectorAll('li');
+    items.forEach((item, index) => {
+      item.style.opacity = 0;
+      setTimeout(() => {
+        item.style.transition = 'opacity 0.5s ease';
+        item.style.opacity = 1;
+      }, index * 200); // 200ms delay per item
+    });
+  };
+
+  const showContent = (featureDiv) => {
+    const content = featureDiv.querySelector('.rollover-content');
+    if (content.classList.contains('d-none')) {
+      content.classList.remove('d-none');
+      animateListItems(content);
+    }
+
+    // Scroll the feature into view
+    featureDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  const hideAllContent = () => {
+    document.querySelectorAll('.rollover-content').forEach(c => c.classList.add('d-none'));
+  };
+
+  // Setup listeners for each feature
+  featureToggles.forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showContent(toggle);
+    });
+    toggle.addEventListener('mouseenter', () => showContent(toggle));
+    toggle.addEventListener('touchstart', () => showContent(toggle));
+  });
+
+  // Hide all if clicked outside features section
+  document.addEventListener('click', (e) => {
+    if (!featuresSection.contains(e.target)) {
+      hideAllContent();
+    }
+  });
+</script>
+
+</body>
+</html>
